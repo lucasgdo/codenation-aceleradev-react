@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br">
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -12,16 +12,36 @@
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 
-	<body>
+	<body class="light">
 		<header>
 			<div class="main-header">
 				<div class="container">
-					<a href="#"><img class="logo-imdb" src="./img/logo-imdb.jpg" alt="logo-imdb"></a>
-					<nav class="header-nav">
-						<a href="#">LANÇAMENTOS</a>
-						<a href="#">CRÍTICA</a>
-						<a href="#">EM CARTAZ</a>
-					</nav>
+					<a href="#"><img class="logo" src="./img/logo-imdb.jpg" alt="logo-imdb"></a>
+					<ul class="header-nav">
+						<li class="header-nav-item">
+							<a href="#">LANÇAMENTOS</a>
+						</li>
+						<li class="header-nav-item">
+							<a href="#">CRÍTICA</a>
+						</li>
+						<li class="header-nav-item">
+							<a href="#">EM CARTAZ</a>
+						</li>
+						<li class="header-nav-item has-dropdown">
+							<a href="#">TEMA</a>
+							<ul class="dropdown">
+								<li class="dropdown-item">
+									<a id="light" href="#">light</a>
+								</li>
+								<li class="dropdown-item">
+									<a id="dark" href="#">dark</a>
+								</li>
+								<li class="dropdown-item">
+									<a id="solar"  href="#">solarize</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 					<div class="user">
 						<img class="rounded" src="./img/walter-white.jpg" alt="profile-img">
 						<span>Walter White</span>
@@ -323,5 +343,7 @@
 				</ul>
 			</nav>
 		</footer>
+
+		<script src="./app.js"></script>
 	</body>
 </html>
